@@ -8,7 +8,7 @@ var started = false;
 var level = 0;
 
 
-$(document).click(function() {
+$("#level-title").click(function() {
   if (!started) {
     $("#level-title").text("Level " + level);
     nextSequence();
@@ -45,7 +45,7 @@ $("body").addClass("game-over");
 setTimeout(function(){
   $("body").removeClass("game-over");
 }, 200);
-$("#level-title").text("Game Over, Press Any key to Restart");
+$("#level-title").text("Game Over, Tap here to Restart");
 startOver();
 }
 }
